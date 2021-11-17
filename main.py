@@ -73,6 +73,7 @@ def main(user, passwd, step):
         step = str(random.randint(3000,35000))
     else:
         step = str(random.randint(0,8000))
+    print(step)
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
