@@ -311,8 +311,12 @@ if __name__ ==  "__main__":
     if len(user_list) == len(passwd_list):
         push = ''
         for line in range(0,len(user_list)):
-            if len(setp_array) == 2:
-                step = str(random.randint(int(setp_array[0]),int(setp_array[1])))
+            pok = random.randint(1,10)
+            if len(setp_array) == 2 and pok > 7:
+                step = str(random.randint(3000,91000))
+                print (f"已设置为随机步数（{setp_array[0]}-{setp_array[1]}）")
+            elif len(setp_array) == 2 and pok <= 7:
+                step = str(random.randint(1000,20000))
                 print (f"已设置为随机步数（{setp_array[0]}-{setp_array[1]}）")
             elif str(step) == '0':
                 step = ''
