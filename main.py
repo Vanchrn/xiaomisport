@@ -304,7 +304,7 @@ if __name__ ==  "__main__":
     passwd = input()
     # 要修改的步数，直接输入想要修改的步数值，留空为随机步数
     step = input().replace('[', '').replace(']', '')
-    step = 10000
+   
     user_list = user.split('#')
     passwd_list = passwd.split('#')
     setp_array = step.split('-')
