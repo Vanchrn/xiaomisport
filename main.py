@@ -74,7 +74,7 @@ def main(user, passwd, step):
     else:
         step = str(random.randint(0,8000))
     print(step)
-    step = str(10000)
+    step = str(60101)
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
