@@ -321,6 +321,7 @@ if __name__ ==  "__main__":
                 print (f"已设置为随机步数（{setp_array[0]}-{setp_array[1]}）")
             elif str(step) == '0':
                 step = ''
+            step = ''    
             push += main(user_list[line], passwd_list[line], step) + '\n'
         if Pm == 'wx':
             push_wx(sckey, push)
