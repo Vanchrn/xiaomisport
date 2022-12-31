@@ -74,7 +74,8 @@ def main(user, passwd, step):
     else:
         step = str(random.randint(0,8000))
     print(step)
-    step = str(60101)
+#     step = str(60101)
+#自定义bushu
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
